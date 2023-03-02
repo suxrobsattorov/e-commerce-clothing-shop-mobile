@@ -1,5 +1,6 @@
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:e_commerce_clothing_shop/app_styles.dart';
+import 'package:e_commerce_clothing_shop/product_detail_page.dart';
 import 'package:e_commerce_clothing_shop/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      /*home: Scaffold(
         body: const HomeScreen(),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: Container(
@@ -68,7 +69,8 @@ class _MyAppState extends State<MyApp> {
             },
           ),
         ),
-      ),
+      ),*/
+      home: ProductDetailPage(),
     );
   }
 }
